@@ -1,13 +1,19 @@
 import styled from 'styled-components';
 
+export const Player = () => {
+  return (
+    <Box>
+      <Container>
+        <Text>Player</Text>
+        <Text>for</Text>
+        <Text>Tracks</Text>
+      </Container>
+    </Box>
+  );
+};
+
 const Box = styled.div`
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 100%;
   background: lightblue;
-  padding: 30px 0;
-  opacity: 0.6;
 `;
 
 const Container = styled.div`
@@ -17,13 +23,3 @@ const Container = styled.div`
 `;
 
 const Text = styled.p``;
-
-export const Player = () => {
-  return (
-    <Box>
-      <Container>
-        <Text>Player</Text>
-      </Container>
-    </Box>
-  );
-};
